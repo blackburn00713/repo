@@ -4,11 +4,23 @@
 	<title>FORM</title>
 </head>
 <body>
-	<form>
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd">
+	<form action="/action_page.php">
+  <label for="name">NAME:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="phnumber">PHONE NUMBER:</label><br>
+  <input type="tel" id="phnumber" name="phnumber"><br>
+   <label for="choiceofcourses">CHOICEOFCOURSE:</label><br>
+  <input type="radio" id="bachelor" name="choiceofcourses" value="BACHELOR">
+  <label for="bachelor">BACHELOR</label><br>
+  <input type="radio" id="masters" name="choiceofcourses" value="MASTERS">
+  <label for="masters">MASTERS</label><br>
+  <label for="subject1">SUBJECTS:</label><br>
+  <input type="checkbox" id="subject1" name="subject1" value="MACHINELEARNING">
+  <label for="subject1"> MACHINELEARNING</label><br>
+  <input type="checkbox" id="subject2" name="subject2" value="digitalimageprocessing">
+  <label for="subject2"> DIGITALIMAGEPROCESSING</label><br>
+  <input type="checkbox" id="subject3" name="subject3" value="webdevelopment">
+  <label for="subject3"> WEBDEVELOPMENT</label>
   </form>
 </body>
 </html>
