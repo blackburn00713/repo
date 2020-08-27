@@ -4,7 +4,7 @@
 	<title>FORM</title>
 </head>
 <body>
-	<form action="/action_page.php">
+	<form action="/action.php" method="post" id="nameform">
   <label for="name">NAME:</label><br>
   <input type="text" id="name" name="name"><br>
   <label for="phnumber">PHONE NUMBER:</label><br>
@@ -24,5 +24,7 @@
   <input type="checkbox" id="subject3" name="subject3" value="webdevelopment">
   <label for="subject3"> WEBDEVELOPMENT</label>
   </form>
+  <button type="submit" form="nameform" value="Submit">Submit</button>
+  
 </body>
 </html>
