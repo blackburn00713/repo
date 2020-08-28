@@ -4,6 +4,21 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>FORM</title>
+  <style type="text/css">
+   a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+} 
+  </style>
 </head>
 <body>
 	<form action="/action.php" method="post" id="nameform">
@@ -26,7 +41,7 @@
   <input type="checkbox" id="subject3" name="subject3" value="webdevelopment">
   <label for="subject3"> WEBDEVELOPMENT</label>
   </form>
-  <button type="submit" form="nameform" value="Submit">Submit</button>
+  <button type="submit" form="nameform" value="Submit"><a href="https://www.google.co.in/">Submit<a></button>
   
 </body>
 </html>
