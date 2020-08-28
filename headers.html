@@ -5,8 +5,14 @@
                table, th, td {
                    border: 1px solid black;
                     padding: 5px;
-                    outline-style: dotted;
+                    
                               }
+               #header{
+                  outline-style: dotted;
+               }
+               tr.values{
+                  outline-style: groove;
+               }
         </style>
       	</head>
       	<body>
@@ -20,12 +26,12 @@
       	    
       	    <div class="marks">
       		<table>
-      			<tr>
+      			<tr id="header">
       				<td>S.no</td>>
       				<td>SUBJECTS</td>
       				<td>MARKS</td>
       			</tr>
-      			<tr>
+      			<tr class="values">
       				<td>1</td>
       				<td>ENGLISH</td>
       				<td>95</td>
