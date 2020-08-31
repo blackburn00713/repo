@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DETAILS OF THE STUDENT</title>
+	<meta charset="utf-8">
+	 <style type="text/css">
+	 img.iiith{
+	 	width: 150px;
+	 	height: 80px;
+	 }	
+	 div#rdiplink{
+	 	margin-left: 1670px;
+     }
+     h1#rdip{
+     	margin-top: 0px;
+     }
+	 div.head{
+	 	width:all;
+	 	height: 80px;
+	 	display: flex;
+	 	padding-bottom: 20px;
+	 }
+	 div.navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        margin-bottom: 40px;
+        }
+
+     div.navbar li{
+        float: left;
+        }
+
+     div.navbar li a {
+         display: block;
+         color: #d6ffff;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-family: 'Open Sans Condensed', sans-serif;
+         }
+
+     div.navbar a:hover {
+         background-color: #111;
+         }
+     /**div.navbar li a {
+         background-color: #4CAF50;
+         }**/
+     div.details{
+     	margin-left: 20px;
+     	margin-top: 20px;
+     	font-family: 'Open Sans Condensed', sans-serif;
+     	font-size: 30px;
+     }
+     div.formfill{
+     	margin-left: 10px;
+     	font-family: 'Nunito', sans-serif ;
+     	font-weight: bold;
+        
+     }
+
+	 </style>
+</head>
+<body>
+	<div class="head">
+		<a href="https://www.iiit.ac.in/">
+		<img class="iiith" src="https://www.iiit.ac.in/img/iiit-new.png" >
+	    </a>
+	    <div id="rdiplink">
+	        <a href="https://serc.iiit.ac.in/rdip">
+	    	   <h1 id="rdip">
+	    		RDIP
+	           </h1>
+	        </a>
+	    </div>
+	</div>
+	<div class="navbar">
+		<ul>
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+        </ul>
+	</div>
+	<div class="formfill">
+		<form action="details.html" method="GET" onsubmit="return namevalid()">
+			<label for="fname">First name:</label>
+             <input type="text" id="fname" name="fname" style="margin-left: 67px;"><br><br>
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" style="margin-left: 105px;"><br><br>
+             <label for="phoneno">Phone No:</label>
+             <input type="tel" id="phoneno" name="phoneno" style="margin-left: 74px;"><br><br>
+             <label >Gender:</label>
+             <input type="radio" id="male" name="gender" value="male" style="margin-left: 89px;">
+             <label for="male">Male</label>
+             <input type="radio" id="female" name="gender" value="female">
+             <label for="female">Female</label>
+             <input type="radio" id="others" name="gender" value="others">
+             <label for="others">Others</label><br><br>
+             <label for="subject1">Reason for RDIP:</label>
+             <input type="checkbox" id="subject1" name="subject1" value="HTML" style="margin-left: 22px;">
+             <label for="subject1"> HTML</label>
+             <input type="checkbox" id="subject2" name="subject2" value="CSS">
+             <label for="subject2"> CSS</label>
+             <input type="checkbox" id="subject3" name="subject3" value="JAVASCRIPT">
+             <label for="subject3"> JAVASCRIPT</label><br><br>
+             <label for="fcollege">College:</label>
+             <input type="text" id="college" name="college" style="margin-left: 89px;"><br><br>
+             <input type="submit" value="Submit" >
+             <input type="reset" value="Reset" style="margin-left: 100px">
+		</form>
+    </div>
+	<script type="text/javascript" src="formvalid.js"></script>
+</body>
+</html>
