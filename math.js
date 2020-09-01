@@ -1,11 +1,16 @@
 function mynumber() {
 	var x=document.getElementById('num').value;
-	if((x<=100)&&(x>=10)){
-		document.getElementById('demo1').innerHTML="NUmber Is Between 10 to 100";
-	}
-	else{
-        document.getElementById('demo1').innerHTML="NUmber Is  not Between 10 to 100";
-	}
+	message= document.getElementById('demo1');
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
 }
 function fibn() {
 	var n=document.getElementById('num1').value;
